@@ -256,10 +256,12 @@
     ul.nav-tabs > li.nav-item > a:hover,
     ul.nav-tabs > li.nav-item .active {
         border-top-color: var(--nord7) !important;
+        background-color: var(--nord2) !important;
     }
 
     li.nav-item:last-child > form > .nav-link {
         border-top-color: var(--nord3) !important;
+        background-color: var(--nord1) !important;
         transition-duration: 0.2s !important;
     }
 
