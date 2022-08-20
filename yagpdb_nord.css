@@ -102,7 +102,7 @@
     }
 
     .tab-content {
-        background-color: var(--nord2) !important;
+        background-color: var(--nord1) !important;
     }
 
     .table-striped > tbody > tr:nth-child(odd) > td {
@@ -286,14 +286,14 @@
 
     ul.nav-tabs > li.nav-item > a {
         color: var(--nord4) !important;
-        background-color: var(--nord1) !important;
+        background-color: var(--nord0) !important;
         border-top-color: var(--nord3) !important;
     }
 
     ul.nav-tabs > li.nav-item > a:hover,
     ul.nav-tabs > li.nav-item .active {
         border-top-color: var(--nord7) !important;
-        background-color: var(--nord2) !important;
+        background-color: var(--nord1) !important;
         color: var(--nord7) !important;
     }
 
@@ -308,12 +308,12 @@
     /* Now we can safely modify the tabs listing */
     li.nav-item:last-child > form > .nav-link {
         border-top: 3px solid var(--nord3) !important;
-        background-color: var(--nord1) !important;
+        background-color: var(--nord0) !important;
     }
 
     li.nav-item:last-child > form > .nav-link:hover {
         border-top: 3px solid var(--nord7) !important;
-        background-color: var(--nord2) !important;
+        background-color: var(--nord1) !important;
         color: var(--nord7) !important;
     }
 
