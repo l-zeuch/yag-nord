@@ -9,7 +9,7 @@ This stylesheet was developed and tested with Firefox, as that browser has
 excellent support for injecting your own CSS via `userContent.css`.
 
 If you would like to report other working browsers, please submit a pull request
-will installation instructions amended under the Installation section.
+with installation instructions amended under the Installation section.
 
 ## Installation
 
