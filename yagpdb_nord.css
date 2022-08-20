@@ -158,7 +158,7 @@
         transition-duration: 0.2s !important;
     }
 
-    .btn-danger:hover {
+    .btn-danger:hover, .btn-danger:focus {
         background-color: var(--nord11) !important;
         border-color: var(--nord11) !important;
         box-shadow: 4px 4px 0px 2px var(--nord0) !important;
@@ -170,7 +170,7 @@
         transition-duration: 0.2s !important;
     }
 
-    .btn-warning:hover {
+    .btn-warning:hover, btn-warning:focus {
         background-color: var(--nord13) !important;
         border-color: var(--nord13) !important;
         box-shadow: 4px 4px 0px 2px var(--nord0) !important;
@@ -182,7 +182,7 @@
         transition-duration: 0.2s !important;
     }
 
-    .btn-success:hover {
+    .btn-success:hover, .btn-success:focus {
         background-color: var(--nord14) !important;
         border-color: var(--nord14) !important;
         box-shadow: 4px 4px 0px 2px var(--nord0) !important;
@@ -195,9 +195,45 @@
         transition-duration: 0.2s !important;
     }
 
-    .btn-primary:hover {
+    .btn-primary:hover, .btn-primary:focus {
         background-color: var(--nord9) !important;
         border-color: var(--nord9) !important;
+        box-shadow: 4px 4px 0px 2px var(--nord0) !important;
+    }
+
+    .btn-secondary {
+        background-color: var(--nord12) !important;
+        border-color: var(--nord12) !important;
+        transition-duration: 0.2s !important;
+    }
+
+    .btn-secondary:hover, .btn-secondary:focus {
+        background-color: var(--nord12) !important;
+        border-color: var(--nord12) !important;
+        box-shadow: 4px 4px 0px 2px var(--nord0) !important;
+    }
+
+    .btn-tertiary {
+        background-color: var(--nord11) !important;
+        border-color: var(--nord11) !important;
+        transition-duration: 0.2s !important;
+    }
+
+    .btn-tertiary:hover, .btn-tertiary:focus {
+        background-color: var(--nord11) !important;
+        border-color: var(--nord11) !important;
+        box-shadow: 4px 4px 0px 2px var(--nord0) !important;
+    }
+
+    .btn-quarternary {
+        background-color: var(--nord10) !important;
+        border-color: var(--nord10) !important;
+        transition-duration: 0.2s !important;
+    }
+
+    .btn-quarternary:hover, .btn-quarternary:focus {
+        background-color: var(--nord10) !important;
+        border-color: var(--nord10) !important;
         box-shadow: 4px 4px 0px 2px var(--nord0) !important;
     }
 
@@ -208,14 +244,15 @@
         color: var(--nord4) !important;
     }
 
-    .btn-info:hover {
+    .btn-info:hover, .btn-info:focus {
         background-color: var(--nord8) !important;
         border-color: var(--nord8) !important;
         box-shadow: 4px 4px 0px 2px var(--nord0) !important;
     }
 
     .btn-danger:active, .btn-warning:active,
-    .btn-success:active, .btn-info:active, .btn-primary:active {
+    .btn-success:active, .btn-info:active, .btn-primary:active,
+    .btn-secondary:active, .btn-tertiary:active, .btn-quarternary:active {
         box-shadow: 4px 4px 0px -2px var(--nord0) inset !important;
     }
 
