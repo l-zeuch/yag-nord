@@ -1,0 +1,410 @@
+/*  This is free and unencumbered software released into the public domain.
+ *
+ *  Anyone is free to copy, modify, publish, use, compile, sell, or
+ *  distribute this software, either in source code form or as a compiled
+ *  binary, for any purpose, commercial or non-commercial, and by any
+ *  means.
+ *
+ *  In jurisdictions that recognize copyright laws, the author or authors
+ *  of this software dedicate any and all copyright interest in the
+ *  software to the public domain. We make this dedication for the benefit
+ *  of the public at large and to the detriment of our heirs and
+ *  successors. We intend this dedication to be an overt act of
+ *  relinquishment in perpetuity of all present and future rights to this
+ *  software under copyright law.
+ *
+ *  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+ *  EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+ *  MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+ *  IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY CLAIM, DAMAGES OR
+ *  OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
+ *  ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+ *  OTHER DEALINGS IN THE SOFTWARE.
+ *
+ *  For more information, please refer to <http://unlicense.org/>
+ */
+
+/*
+ * Set up the nord palette, as per
+ * https://www.nordtheme.com/docs/colors-and-palettes
+ */
+:root {
+    /* Polar Night */
+    --nord0:  #2E3440;
+    --nord1:  #3B4252;
+    --nord2:  #434C5E;
+    --nord3:  #4C566A;
+
+    /* Snow Storm */
+    --nord4:  #D8DEE9;
+    --nord5:  #E5E9F0;
+    --nord6:  #ECEFF4;
+
+    /* Frost */
+    --nord7:  #8FBCBB;
+    --nord8:  #88C0D0;
+    --nord9:  #81A1C1;
+    --nord10: #5E81AC;
+
+    /* Aurora */
+    --nord11: #BF616A;
+    --nord12: #D08770;
+    --nord13: #EBCB8B;
+    --nord14: #A3BE8C;
+    --nord15: #B48EAD;
+}
+
+@-moz-document url-prefix("https://yagpdb.xyz/manage") {
+    @namespace svg url(http://www.w3.org/2000/svg);
+
+    /* Base stuff */
+    html.dark body, header {
+        background-color: var(--nord0) !important;
+        color: var(--nord4) !important;
+    }
+
+    h1, h2 {
+        color: var(--nord6) !important;
+    }
+
+    h3, h4 {
+        color: var(--nord5) !important;
+    }
+
+    h5, h6 {
+        color: var(--nord4) !important;
+    }
+
+    a {
+        color: var(--nord9) !important;
+        transition-duration: 0.2s !important;
+    }
+
+    a:focus, a:hover {
+        background-color: var(--nord1) !important;
+        color: var(--nord7) !important;
+    }
+
+    code {
+        color: var(--nord7) !important;
+    }
+
+    div.page-header {
+        background-color: var(--nord0) !important;
+    }
+
+    [class*="card"] {
+        background-color: var(--nord1) !important;
+    }
+
+    .border-primary, .card-featured {
+        border-color: var(--nord14) !important;
+    }
+
+    .tab-content {
+        background-color: var(--nord2) !important;
+    }
+
+    .table-striped > tbody > tr:nth-child(odd) > td {
+        background-color: var(--nord2) !important;
+    }
+
+    div.cc-panel {
+        border: 5px solid var(--nord1) !important;
+        border-radius: 5px !important;
+        border-top: none !important;
+    }
+
+    div.code.gotmplmd {
+        background-color: var(--nord0) !important;
+    }
+
+    .card-title {
+        background-color: var(--nord1) !important;
+    }
+
+    /* Front-Page */
+    div.highlight {
+        border: 0px solid var(--nord1) !important;
+    }
+
+    div.highlight, div > pre {
+        background-color: var(--nord0) !important;
+        color: var(--nord4) !important;
+    }
+
+    /* Buttons */
+    .btn-group > * {
+        background-color: var(--nord3) !important;
+        border-color: transparent !important;
+    }
+
+    .input-group-text,
+    input, select {
+        background-color: var(--nord3) !important;
+        border-color: transparent !important;
+        transition-duration: 0.2s !important;
+    }
+
+    input[type=text]:hover, input[type=text]:focus {
+        border: 1px solid var(--nord8) !important;
+    }
+
+    textarea {
+        background-color: var(--nord0) !important;
+    }
+
+    .btn-danger {
+        background-color: var(--nord11) !important;
+        border-color: var(--nord11) !important;
+        border-width: 3px !important;
+        transition-duration: 0.2s !important;
+    }
+
+    .btn-danger:hover {
+        background-color: var(--nord11) !important;
+        border-color: var(--nord11) !important;
+        box-shadow: 4px 4px 0px 2px var(--nord0) !important;
+    }
+
+    .btn-warning {
+        background-color: var(--nord13) !important;
+        border-color: var(--nord13) !important;
+        transition-duration: 0.2s !important;
+    }
+
+    .btn-warning:hover {
+        background-color: var(--nord13) !important;
+        border-color: var(--nord13) !important;
+        box-shadow: 4px 4px 0px 2px var(--nord0) !important;
+    }
+
+    .btn-success {
+        background-color: var(--nord14) !important;
+        border-color: var(--nord14) !important;
+        transition-duration: 0.2s !important;
+    }
+
+    .btn-success:hover {
+        background-color: var(--nord14) !important;
+        border-color: var(--nord14) !important;
+        box-shadow: 4px 4px 0px 2px var(--nord0) !important;
+    }
+
+    .btn-primary {
+        background-color: var(--nord9) !important;
+        border-color: var(--nord9) !important;
+        color: var(--nord4) !important;
+        transition-duration: 0.2s !important;
+    }
+
+    .btn-primary:hover {
+        background-color: var(--nord9) !important;
+        border-color: var(--nord9) !important;
+        box-shadow: 4px 4px 0px 2px var(--nord0) !important;
+    }
+
+    .btn-info {
+        background-color: var(--nord9) !important;
+        border-color: var(--nord9) !important;
+        transition-duration: 0.2s !important;
+        color: var(--nord4) !important;
+    }
+
+    .btn-info:hover {
+        background-color: var(--nord8) !important;
+        border-color: var(--nord8) !important;
+        box-shadow: 4px 4px 0px 2px var(--nord0) !important;
+    }
+
+    .btn-danger:active, .btn-warning:active,
+    .btn-success:active, .btn-info:active, .btn-primary:active {
+        box-shadow: 4px 4px 0px -2px var(--nord0) inset !important;
+    }
+
+    /* Navigation / Sidebar */
+    [class*="sidebar-"], [class*="nano"] {
+        background-color: var(--nord0) !important;
+        color: var(--nord4) !important;
+    }
+
+    .nav-parent, .nav-expanded {
+        background-color: var(--nord0) !important;
+        color: var(--nord4) !important;
+    }
+
+    .nav-item,
+    .nav-item > .nav-link, .nav-children {
+        background-color: var(--nord1) !important;
+    }
+
+    .nav-link {
+        color: var(--nord4) !important;
+    }
+
+    .nav-children > li > a:hover, .nav-children > li > a:focus {
+        background-color: var(--nord3) !important;
+    }
+
+    ul.nav-tabs > li.nav-item {
+        background-color: var(--nord0) !important;
+    }
+
+    ul.nav-tabs > li.nav-item > a {
+        color: var(--nord4) !important;
+        background-color: var(--nord1) !important;
+        border-top-color: var(--nord3) !important;
+    }
+
+    ul.nav-tabs > li.nav-item > a:hover,
+    ul.nav-tabs > li.nav-item .active {
+        border-top-color: var(--nord7) !important;
+    }
+
+    li.nav-item:last-child > form > .nav-link {
+        border-top-color: var(--nord3) !important;
+        transition-duration: 0.2s !important;
+    }
+
+    li.nav-item:last-child > form > .nav-link:hover {
+        background-color: var(--nord1) !important;
+        border-top-color: var(--nord7) !important;
+    }
+
+    ul.nav-main > li.nav-active > a {
+        box-shadow: 3px 0 0 var(--nord14) inset !important;
+        background-color: var(--nord1) !important;
+    }
+
+    /* Notifications */
+    .notification-success {
+        background-color: var(--nord14) !important;
+        color: var(--nord4) !important;
+    }
+
+    .notification-danger {
+        background-color: var(--nord11) !important;
+        color: var(--nord4) !important;
+    }
+
+    .text-success {
+        color: var(--nord14) !important;
+    }
+
+    .indicator-success::before {
+        color: var(--nord14) !important;
+    }
+
+    .text-danger {
+        color: var(--nord11) !important;
+    }
+
+    .indicator-danger::before {
+        color: var(--nord11) !important;
+    }
+
+    .ui-pnotify > span {
+        border-color: var(--nord15) !important;
+    }
+
+    span.bg-danger {
+        background-color: var(--nord11) !important;
+        color: var(--nord0) !important;
+    }
+
+    span.bg-success {
+        background-color: var(--nord14) !important;
+        color: var(--nord0) !important;
+    }
+
+    .alert-warning {
+        background-color: var(--nord13) !important;
+        border-color: var(--nord13) !important;
+    }
+
+    .alert-danger {
+        background-color: var(--nord11) !important;
+        border-color: var(--nord11) !important;
+    }
+
+    .alert-info {
+        background-color: var(--nord8) !important;
+        border-color: var(--nord8) !important;
+    }
+
+    /* Status page */
+    [class*="shard-status-"] {
+        border-radius: 5px !important;
+        margin: 1px !important;
+    }
+
+    .shard:hover {
+        border-color: var(--nord8) !important;
+        border-width: 3px !important;
+    }
+
+    .shard-quick-details {
+        filter: none !important;
+        -webkit-filter: none !important;
+    }
+
+    .shard-quick-details > p {
+        line-height: 20px !important;
+        color: var(--nord2) !important;
+    }
+
+    .shard-quick-details > p:nth-child(1) {
+        text-align: left !important;
+        font-weight: bold !important;
+    }
+
+    .shard-quick-details > p:nth-child(2) {
+        text-align: right !important;
+        font-weight: bold !important;
+        text-shadow: none !important;
+        color: var(--nord3) !important;
+    }
+
+    .shard-status-identifying {
+        border-color: var(--nord13) !important;
+        background-color:  var(--nord13) !important;
+        border-width: 3px !important;
+    }
+
+    .shard-status-resuming {
+        border-color: var(--nord13) !important;
+        background-color:  var(--nord13) !important;
+        border-width: 3px !important;
+    }
+
+    .shard-status-connecting {
+        border-color: var(--nord13) !important;
+        background-color:  var(--nord13) !important;
+        border-width: 3px !important;
+    }
+
+    .shard-status-ready {
+        background-color: var(--nord14) !important;
+        border-color: var(--nord14) !important;
+        border-width: 3px !important;
+    }
+
+    .shard-status-disconnected {
+        background-color: var(--nord11) !important;
+        border-color: var(--nord11) !important;
+    }
+
+    .shard-low-events {
+        background-color: var(--nord12) !important;
+        border-color: var(--nord12) !important;
+    }
+
+    .host-status > .node-row:nth-child(odd) {
+        background-color: var(--nord2) !important;
+    }
+
+    .card-body .host-status > .row .node-row > .col-0 {
+        flex: 0 0 23% !important;
+        padding-left: 23px !important;
+    }
+}
