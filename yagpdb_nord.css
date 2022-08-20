@@ -141,6 +141,7 @@
     }
 
     input:hover, input:focus,
+    select:hover, select:focus,
     .btn-group > *:hover, .btn-group > *:focus {
         border: 1px solid var(--nord8) !important;
     }
