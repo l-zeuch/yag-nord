@@ -104,8 +104,16 @@
         background-color: var(--nord1) !important;
     }
 
-    .table-striped > tbody > tr:nth-child(odd) > td {
+    tbody > tr:nth-child(even) > * {
+        background-color: var(--nord1) !important;
+    }
+
+    tbody > tr:nth-child(odd) > * {
         background-color: var(--nord2) !important;
+    }
+
+    thead > tr > * {
+        background-color: var(--nord1) !important;
     }
 
     div.cc-panel {
