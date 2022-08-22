@@ -53,8 +53,7 @@
     --nord15: #B48EAD;
 }
 
-@-moz-document  url-prefix("https://yagpdb.xyz/manage"),
-    url-prefix("https://yagpdb.xyz/status") {
+@-moz-document regexp("https://yagpdb.xyz/.+") {
     @namespace svg url(http://www.w3.org/2000/svg);
 
     /* Base stuff */
