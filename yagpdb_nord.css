@@ -130,6 +130,22 @@
         background-color: var(--nord1) !important;
     }
 
+    .popover {
+        border-color: var(--nord0) !important;
+    }
+
+    .popover-body {
+        background-color: var(--nord2) !important;
+        color: var(--nord4) !important;
+        border: none !important;
+    }
+
+    .popover-header {
+        border-bottom: 3px solid var(--nord3) !important;
+        background-color: var(--nord2) !important;
+        color: var(--nord8) !important;
+    }
+
     /* Front-Page */
     div.highlight {
         border: 0px solid var(--nord1) !important;
