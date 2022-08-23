@@ -62,15 +62,18 @@
         color: var(--nord4) !important;
     }
 
-    h1, h2 {
-        color: var(--nord6) !important;
+    [class*="card"] {
+        background-color: var(--nord1) !important;
     }
 
-    h3, h4 {
-        color: var(--nord5) !important;
+    [class*="shard-status-"] {
+        border-radius: 5px !important;
+        margin: 1px !important;
     }
 
-    h5, h6 {
+    /* Navigation / Sidebar */
+    [class*="sidebar-"], [class*="nano"] {
+        background-color: var(--nord0) !important;
         color: var(--nord4) !important;
     }
 
@@ -88,20 +91,22 @@
         color: var(--nord7) !important;
     }
 
-    div.page-header {
-        background-color: var(--nord0) !important;
+    h1, h2 {
+        color: var(--nord6) !important;
     }
 
-    [class*="card"] {
-        background-color: var(--nord1) !important;
+    h3, h4 {
+        color: var(--nord5) !important;
     }
 
-    .border-primary, .card-featured {
-        border-color: var(--nord14) !important;
+    h5, h6 {
+        color: var(--nord4) !important;
     }
 
-    .tab-content {
-        background-color: var(--nord1) !important;
+    input:hover, input:focus,
+    select:hover, select:focus,
+    .btn-group > *:hover, .btn-group > *:focus {
+        border: 1px solid var(--nord8) !important;
     }
 
     tbody > tr:nth-child(even) > * {
@@ -112,26 +117,274 @@
         background-color: var(--nord2) !important;
     }
 
+    textarea {
+        background-color: var(--nord0) !important;
+    }
+
     thead > tr > * {
         background-color: var(--nord1) !important;
+    }
+
+    .alert-danger {
+        background-color: var(--nord11) !important;
+        border-color: var(--nord11) !important;
+    }
+
+    .alert-info {
+        background-color: var(--nord8) !important;
+        border-color: var(--nord8) !important;
+    }
+
+    .alert-warning {
+        background-color: var(--nord13) !important;
+        border-color: var(--nord13) !important;
     }
 
     .automod-rule-part-table > table > tbody > tr > * {
         background-color: var(--nord1) !important;
     }
 
-    div.cc-panel {
+    .bg-danger {
+        background-color: var(--nord11) !important;
+        color: var(--nord0) !important;
+    }
+
+    .bg-success {
+        background-color: var(--nord14) !important;
+        color: var(--nord0) !important;
+    }
+
+    .border-primary, .card-featured {
+        border-color: var(--nord14) !important;
+    }
+
+    .btn-danger {
+        background-color: var(--nord11) !important;
+        border-color: var(--nord11) !important;
+        border-width: 3px !important;
+        transition-duration: 0.2s !important;
+    }
+
+    .btn-danger:active, .btn-warning:active,
+    .btn-success:active, .btn-info:active, .btn-primary:active,
+    .btn-secondary:active, .btn-tertiary:active, .btn-quarternary:active {
+        box-shadow: 4px 4px 0px -2px var(--nord0) inset !important;
+    }
+
+    .btn-danger:hover, .btn-danger:focus {
+        background-color: var(--nord11) !important;
+        border-color: var(--nord11) !important;
+        box-shadow: 4px 4px 0px 2px var(--nord0) !important;
+    }
+
+    .btn-info {
+        background-color: var(--nord9) !important;
+        border-color: var(--nord9) !important;
+        transition-duration: 0.2s !important;
+        color: var(--nord4) !important;
+    }
+
+    .btn-info:hover, .btn-info:focus {
+        background-color: var(--nord8) !important;
+        border-color: var(--nord8) !important;
+        box-shadow: 4px 4px 0px 2px var(--nord0) !important;
+    }
+
+    .btn-primary {
+        background-color: var(--nord9) !important;
+        border-color: var(--nord9) !important;
+        color: var(--nord4) !important;
+        transition-duration: 0.2s !important;
+    }
+
+    .btn-primary:hover, .btn-primary:focus {
+        background-color: var(--nord9) !important;
+        border-color: var(--nord9) !important;
+        box-shadow: 4px 4px 0px 2px var(--nord0) !important;
+    }
+
+    .btn-quarternary {
+        background-color: var(--nord10) !important;
+        border-color: var(--nord10) !important;
+        transition-duration: 0.2s !important;
+    }
+
+    .btn-quarternary:hover, .btn-quarternary:focus {
+        background-color: var(--nord10) !important;
+        border-color: var(--nord10) !important;
+        box-shadow: 4px 4px 0px 2px var(--nord0) !important;
+    }
+
+    .btn-secondary {
+        background-color: var(--nord12) !important;
+        border-color: var(--nord12) !important;
+        transition-duration: 0.2s !important;
+    }
+
+    .btn-secondary:hover, .btn-secondary:focus {
+        background-color: var(--nord12) !important;
+        border-color: var(--nord12) !important;
+        box-shadow: 4px 4px 0px 2px var(--nord0) !important;
+    }
+
+    .btn-success {
+        background-color: var(--nord14) !important;
+        border-color: var(--nord14) !important;
+        transition-duration: 0.2s !important;
+    }
+
+    .btn-success:hover, .btn-success:focus {
+        background-color: var(--nord14) !important;
+        border-color: var(--nord14) !important;
+        box-shadow: 4px 4px 0px 2px var(--nord0) !important;
+    }
+
+    .btn-tertiary {
+        background-color: var(--nord11) !important;
+        border-color: var(--nord11) !important;
+        transition-duration: 0.2s !important;
+    }
+
+    .btn-tertiary:hover, .btn-tertiary:focus {
+        background-color: var(--nord11) !important;
+        border-color: var(--nord11) !important;
+        box-shadow: 4px 4px 0px 2px var(--nord0) !important;
+    }
+
+    .btn-warning {
+        background-color: var(--nord13) !important;
+        border-color: var(--nord13) !important;
+        transition-duration: 0.2s !important;
+    }
+
+    .btn-warning:hover, btn-warning:focus {
+        background-color: var(--nord13) !important;
+        border-color: var(--nord13) !important;
+        box-shadow: 4px 4px 0px 2px var(--nord0) !important;
+    }
+
+    .card-body .host-status > .row .node-row > .col-0 {
+        flex: 0 0 23% !important;
+        padding-left: 23px !important;
+    }
+
+    .card-title {
+        background-color: var(--nord1) !important;
+    }
+
+    .cc-panel {
         border: 5px solid var(--nord1) !important;
         border-radius: 5px !important;
         border-top: none !important;
     }
 
-    div.code.gotmplmd {
+    .code.gotmplmd {
         background-color: var(--nord0) !important;
     }
 
-    .card-title {
+    /* Front-Page */
+    .highlight {
+        border: 0px solid var(--nord1) !important;
+    }
+
+    .highlight, div > pre {
+        background-color: var(--nord0) !important;
+        color: var(--nord4) !important;
+    }
+
+    .host-status > .node-row:nth-child(odd) {
+        background-color: var(--nord2) !important;
+    }
+
+    .indicator-danger::before {
+        color: var(--nord11) !important;
+    }
+
+    .indicator-success::before {
+        color: var(--nord14) !important;
+    }
+
+    /* Buttons */
+    .input-group-text,
+    input, select, .btn-group > * {
+        background-color: var(--nord3) !important;
+        border: 1px solid transparent !important;
+        transition-duration: 0.2s !important;
+    }
+
+    .nav-children > li > a:hover, .nav-children > li > a:focus {
+        background-color: var(--nord3) !important;
+    }
+
+    .nav-item,
+    .nav-item > .nav-link, .nav-children {
         background-color: var(--nord1) !important;
+    }
+
+    /* Now we can safely modify the tabs listing */
+    .nav-item:last-child > form > .nav-link {
+        border-top: 3px solid var(--nord3) !important;
+        background-color: var(--nord0) !important;
+    }
+
+    .nav-item:last-child > form > .nav-link:hover {
+        border-top: 3px solid var(--nord7) !important;
+        background-color: var(--nord1) !important;
+        color: var(--nord7) !important;
+    }
+
+    /* reset the weird \"+\" button on tabs row */
+    .nav-item:last-child > form > input,
+    .nav-item:last-child > form > input:hover {
+        border: none !important;
+        padding: none !important;
+        margin: none !important;
+    }
+
+    .nav-link {
+        color: var(--nord4) !important;
+    }
+
+    .nav-main > .nav-active > a {
+        box-shadow: 3px 0 0 var(--nord14) inset !important;
+        background-color: var(--nord1) !important;
+    }
+
+    .nav-parent, .nav-expanded {
+        background-color: var(--nord0) !important;
+        color: var(--nord4) !important;
+    }
+
+    .nav-tabs > .nav-item > a {
+        color: var(--nord4) !important;
+        background-color: var(--nord0) !important;
+        border-top-color: var(--nord3) !important;
+    }
+
+    .nav-tabs > .nav-item > a:hover,
+    .nav-tabs > .nav-item .active {
+        border-top-color: var(--nord7) !important;
+        background-color: var(--nord1) !important;
+        color: var(--nord7) !important;
+    }
+
+    .nav-tabs > .nav-item {
+        background-color: var(--nord0) !important;
+    }
+
+    .notification-danger {
+        background-color: var(--nord11) !important;
+        color: var(--nord4) !important;
+    }
+
+    /* Notifications */
+    .notification-success {
+        background-color: var(--nord14) !important;
+        color: var(--nord4) !important;
+    }
+
+    .page-header {
+        background-color: var(--nord0) !important;
     }
 
     .popover {
@@ -150,275 +403,13 @@
         color: var(--nord8) !important;
     }
 
-    /* Front-Page */
-    div.highlight {
-        border: 0px solid var(--nord1) !important;
+    .question-tooltip {
+        color: var(--nord15) !important;
     }
 
-    div.highlight, div > pre {
-        background-color: var(--nord0) !important;
-        color: var(--nord4) !important;
-    }
-
-    /* Buttons */
-    .input-group-text,
-    input, select, .btn-group > * {
-        background-color: var(--nord3) !important;
-        border: 1px solid transparent !important;
-        transition-duration: 0.2s !important;
-    }
-
-    input:hover, input:focus,
-    select:hover, select:focus,
-    .btn-group > *:hover, .btn-group > *:focus {
-        border: 1px solid var(--nord8) !important;
-    }
-
-    textarea {
-        background-color: var(--nord0) !important;
-    }
-
-    .btn-danger {
-        background-color: var(--nord11) !important;
-        border-color: var(--nord11) !important;
-        border-width: 3px !important;
-        transition-duration: 0.2s !important;
-    }
-
-    .btn-danger:hover, .btn-danger:focus {
-        background-color: var(--nord11) !important;
-        border-color: var(--nord11) !important;
-        box-shadow: 4px 4px 0px 2px var(--nord0) !important;
-    }
-
-    .btn-warning {
-        background-color: var(--nord13) !important;
-        border-color: var(--nord13) !important;
-        transition-duration: 0.2s !important;
-    }
-
-    .btn-warning:hover, btn-warning:focus {
-        background-color: var(--nord13) !important;
-        border-color: var(--nord13) !important;
-        box-shadow: 4px 4px 0px 2px var(--nord0) !important;
-    }
-
-    .btn-success {
-        background-color: var(--nord14) !important;
-        border-color: var(--nord14) !important;
-        transition-duration: 0.2s !important;
-    }
-
-    .btn-success:hover, .btn-success:focus {
-        background-color: var(--nord14) !important;
-        border-color: var(--nord14) !important;
-        box-shadow: 4px 4px 0px 2px var(--nord0) !important;
-    }
-
-    .btn-primary {
-        background-color: var(--nord9) !important;
-        border-color: var(--nord9) !important;
-        color: var(--nord4) !important;
-        transition-duration: 0.2s !important;
-    }
-
-    .btn-primary:hover, .btn-primary:focus {
-        background-color: var(--nord9) !important;
-        border-color: var(--nord9) !important;
-        box-shadow: 4px 4px 0px 2px var(--nord0) !important;
-    }
-
-    .btn-secondary {
+    .shard-low-events {
         background-color: var(--nord12) !important;
         border-color: var(--nord12) !important;
-        transition-duration: 0.2s !important;
-    }
-
-    .btn-secondary:hover, .btn-secondary:focus {
-        background-color: var(--nord12) !important;
-        border-color: var(--nord12) !important;
-        box-shadow: 4px 4px 0px 2px var(--nord0) !important;
-    }
-
-    .btn-tertiary {
-        background-color: var(--nord11) !important;
-        border-color: var(--nord11) !important;
-        transition-duration: 0.2s !important;
-    }
-
-    .btn-tertiary:hover, .btn-tertiary:focus {
-        background-color: var(--nord11) !important;
-        border-color: var(--nord11) !important;
-        box-shadow: 4px 4px 0px 2px var(--nord0) !important;
-    }
-
-    .btn-quarternary {
-        background-color: var(--nord10) !important;
-        border-color: var(--nord10) !important;
-        transition-duration: 0.2s !important;
-    }
-
-    .btn-quarternary:hover, .btn-quarternary:focus {
-        background-color: var(--nord10) !important;
-        border-color: var(--nord10) !important;
-        box-shadow: 4px 4px 0px 2px var(--nord0) !important;
-    }
-
-    .btn-info {
-        background-color: var(--nord9) !important;
-        border-color: var(--nord9) !important;
-        transition-duration: 0.2s !important;
-        color: var(--nord4) !important;
-    }
-
-    .btn-info:hover, .btn-info:focus {
-        background-color: var(--nord8) !important;
-        border-color: var(--nord8) !important;
-        box-shadow: 4px 4px 0px 2px var(--nord0) !important;
-    }
-
-    .btn-danger:active, .btn-warning:active,
-    .btn-success:active, .btn-info:active, .btn-primary:active,
-    .btn-secondary:active, .btn-tertiary:active, .btn-quarternary:active {
-        box-shadow: 4px 4px 0px -2px var(--nord0) inset !important;
-    }
-
-    /* Navigation / Sidebar */
-    [class*="sidebar-"], [class*="nano"] {
-        background-color: var(--nord0) !important;
-        color: var(--nord4) !important;
-    }
-
-    .nav-parent, .nav-expanded {
-        background-color: var(--nord0) !important;
-        color: var(--nord4) !important;
-    }
-
-    .nav-item,
-    .nav-item > .nav-link, .nav-children {
-        background-color: var(--nord1) !important;
-    }
-
-    .nav-link {
-        color: var(--nord4) !important;
-    }
-
-    .nav-children > li > a:hover, .nav-children > li > a:focus {
-        background-color: var(--nord3) !important;
-    }
-
-    ul.nav-tabs > li.nav-item {
-        background-color: var(--nord0) !important;
-    }
-
-    ul.nav-tabs > li.nav-item > a {
-        color: var(--nord4) !important;
-        background-color: var(--nord0) !important;
-        border-top-color: var(--nord3) !important;
-    }
-
-    ul.nav-tabs > li.nav-item > a:hover,
-    ul.nav-tabs > li.nav-item .active {
-        border-top-color: var(--nord7) !important;
-        background-color: var(--nord1) !important;
-        color: var(--nord7) !important;
-    }
-
-    /* reset the weird "+" button on tabs row */
-    li.nav-item:last-child > form > input,
-    li.nav-item:last-child > form > input:hover {
-        border: none !important;
-        padding: none !important;
-        margin: none !important;
-    }
-
-    /* Now we can safely modify the tabs listing */
-    li.nav-item:last-child > form > .nav-link {
-        border-top: 3px solid var(--nord3) !important;
-        background-color: var(--nord0) !important;
-    }
-
-    li.nav-item:last-child > form > .nav-link:hover {
-        border-top: 3px solid var(--nord7) !important;
-        background-color: var(--nord1) !important;
-        color: var(--nord7) !important;
-    }
-
-    ul.nav-main > li.nav-active > a {
-        box-shadow: 3px 0 0 var(--nord14) inset !important;
-        background-color: var(--nord1) !important;
-    }
-
-    /* Notifications */
-    .notification-success {
-        background-color: var(--nord14) !important;
-        color: var(--nord4) !important;
-    }
-
-    .notification-danger {
-        background-color: var(--nord11) !important;
-        color: var(--nord4) !important;
-    }
-
-    .text-success {
-        color: var(--nord14) !important;
-    }
-
-    .indicator-success::before {
-        color: var(--nord14) !important;
-    }
-
-    .text-danger {
-        color: var(--nord11) !important;
-    }
-
-    .indicator-danger::before {
-        color: var(--nord11) !important;
-    }
-
-    .ui-pnotify > span {
-        border-color: var(--nord15) !important;
-    }
-
-    span.bg-danger {
-        background-color: var(--nord11) !important;
-        color: var(--nord0) !important;
-    }
-
-    span.bg-success {
-        background-color: var(--nord14) !important;
-        color: var(--nord0) !important;
-    }
-
-    .alert-warning {
-        background-color: var(--nord13) !important;
-        border-color: var(--nord13) !important;
-    }
-
-    .alert-danger {
-        background-color: var(--nord11) !important;
-        border-color: var(--nord11) !important;
-    }
-
-    .alert-info {
-        background-color: var(--nord8) !important;
-        border-color: var(--nord8) !important;
-    }
-
-    /* Status page */
-    [class*="shard-status-"] {
-        border-radius: 5px !important;
-        margin: 1px !important;
-    }
-
-    .shard:hover {
-        border-color: var(--nord8) !important;
-        border-width: 3px !important;
-    }
-
-    .shard-quick-details {
-        filter: none !important;
-        -webkit-filter: none !important;
     }
 
     .shard-quick-details > p {
@@ -438,19 +429,23 @@
         color: var(--nord3) !important;
     }
 
-    .shard-status-identifying {
-        border-color: var(--nord13) !important;
-        background-color:  var(--nord13) !important;
-        border-width: 3px !important;
-    }
-
-    .shard-status-resuming {
-        border-color: var(--nord13) !important;
-        background-color:  var(--nord13) !important;
-        border-width: 3px !important;
+    .shard-quick-details {
+        filter: none !important;
+        -webkit-filter: none !important;
     }
 
     .shard-status-connecting {
+        border-color: var(--nord13) !important;
+        background-color:  var(--nord13) !important;
+        border-width: 3px !important;
+    }
+
+    .shard-status-disconnected {
+        background-color: var(--nord11) !important;
+        border-color: var(--nord11) !important;
+    }
+
+    .shard-status-identifying {
         border-color: var(--nord13) !important;
         background-color:  var(--nord13) !important;
         border-width: 3px !important;
@@ -462,22 +457,41 @@
         border-width: 3px !important;
     }
 
-    .shard-status-disconnected {
-        background-color: var(--nord11) !important;
-        border-color: var(--nord11) !important;
+    .shard-status-resuming {
+        border-color: var(--nord13) !important;
+        background-color:  var(--nord13) !important;
+        border-width: 3px !important;
     }
 
-    .shard-low-events {
-        background-color: var(--nord12) !important;
-        border-color: var(--nord12) !important;
+    .shard:hover {
+        border-color: var(--nord8) !important;
+        border-width: 3px !important;
     }
 
-    .host-status > .node-row:nth-child(odd) {
-        background-color: var(--nord2) !important;
+    .tab-content {
+        background-color: var(--nord1) !important;
     }
 
-    .card-body .host-status > .row .node-row > .col-0 {
-        flex: 0 0 23% !important;
-        padding-left: 23px !important;
+    .text-danger {
+        color: var(--nord11) !important;
+    }
+
+    .text-success {
+        color: var(--nord14) !important;
+    }
+
+    .tooltip > .tooltip-inner {
+        background-color: var(--nord0) !important;
+        color: var(--nord4) !important;
+        box-shadow: 4px 4px 0px 2px var(--nord0) !important;
+        border: 1px solid var(--nord9) !important;
+    }
+
+    .tooltip {
+        opacity: 0.9 !important;
+    }
+
+    .ui-pnotify > span {
+        border-color: var(--nord15) !important;
     }
 }
