@@ -116,6 +116,10 @@
         background-color: var(--nord1) !important;
     }
 
+    .automod-rule-part-table > table > tbody > tr > * {
+        background-color: var(--nord1) !important;
+    }
+
     div.cc-panel {
         border: 5px solid var(--nord1) !important;
         border-radius: 5px !important;
