@@ -2,7 +2,6 @@
 
 Custom CSS for the [YAGPDB control panel](https://yagpdb.xyz/manage)
 following the [Nord](https://www.nordtheme.com/docs/colors-and-palettes/) palette.
-
 ## Information
 
 This stylesheet was developed and tested with Firefox, as that browser has
@@ -63,19 +62,22 @@ not exist yet, create it.
 Google Chrome / Chromium does not support user styles like Firefox does.
 [This is deliberate](https://bugs.chromium.org/p/chromium/issues/detail?id=347016).
 
-(Further this breaks accessibility standards and the CSS specification,
+Further this breaks accessibility standards and the CSS specification,
 but we all know how much Google actually cares about their users : )
 
 However, there is a workaround:
 
-1. Install the [Stylus extension](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne)
+1. Install the [Stylus extension](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne).
 
-2. [Manage](chrome-extension://clngdbkpkpeebahjckkjfobafhncgmne/manage.html) Stylus.
+2. Manage the stylus extension (click the puzzle thingy next to the search bar,
+   select Stylus and click `Manage` in its menu.)
 
-3. Click `Write New Style` on the sidebar.
+3. Click `Write New Style` on the left side-panel.
 
-4. Click `Import` and paste the contents of the [yagpdb_nord.css](yagpdb_nord.css)
-    file into it, and select `Overwrite Style`. Hit `Save` and restart Chrome.
+4. Click `Import`, paste the contents of the [yagpdb_nord.css](yagpdb_nord.css)
+   file into it, and select `Overwrite Style`.
+
+5. Save and restart Chrome.
 
 ## License
 
