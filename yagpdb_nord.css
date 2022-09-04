@@ -74,6 +74,7 @@
     }
 
     h1, h2 {
+        border-color: var(--nord10) !important;
         color: var(--nord6) !important;
     }
 
