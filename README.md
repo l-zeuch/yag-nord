@@ -2,6 +2,7 @@
 
 Custom CSS for the [YAGPDB control panel](https://yagpdb.xyz/manage)
 following the [Nord](https://www.nordtheme.com/docs/colors-and-palettes/) palette.
+
 ## Information
 
 This stylesheet was developed and tested with Firefox, as that browser has
@@ -9,41 +10,6 @@ excellent support for injecting your own CSS via `userContent.css`.
 
 It has also been reported to work on Chrome and Chromium. (This list might be
 expanded in future).
-
-## Contributing
-
-If you would like to report other working browsers, add a new section
-`Browsername` under *Installation*. If applicable, describe the modifications
-necessary to make it work, or submit a patch file for users to apply.
-
-### Submitting Code
-
-The commit header is mandatory and should summarize the change. "Update README"
-is not an acceptable header, nor is "magic". Please try to keep it below 50
-characters.
-
-If 50 characters are not enough and you want to add more detail, add a commit
-body, like so:
-
-```
-(commit header)
-<blank line>
-(Commit body)
-```
-
-Secondly, your change should be useful: though fixing typos is appreciated, if
-that's the sole content of your PR I'm going to reject it and push the change
-myself. However, if you do touch up some code and in parellel fix a few
-***adjacent*** typos, go ahead.
-
-If your change is purely code, please try to stick to the current format present
-in the CSS file. If your IDE of choice does something weird to the code,
-like automatically formatting, or changing tabs, tabs width, or *anything like
-that*, fix your IDE, not the code.
-
-Lastly, and this is the most important requirement: You must be willing to waive
-any and all copyright on your submission. This """project""" is released into
-the public domain, and thus all contributions are released into the same as well.
 
 ## Installation
 
@@ -83,6 +49,41 @@ but we all know how much Google actually cares about their users : )
    file into it, and select `Overwrite Style`.
 
 5. Save and restart Chrome.
+
+## Contributing
+
+If you would like to report other working browsers, add a new section
+`Browsername` under *Installation*. If applicable, describe the modifications
+necessary to make it work, or submit a patch file for users to apply.
+
+### Submitting Code
+
+The commit header is mandatory and should summarize the change. "Update README"
+is not an acceptable header, nor is "magic". Please try to keep it below 50
+characters.
+
+If 50 characters are not enough and you want to add more detail, add a commit
+body, like so:
+
+```
+(commit header)
+<blank line>
+(Commit body)
+```
+
+Secondly, your change should be useful: though fixing typos is appreciated, if
+that's the sole content of your PR I'm going to reject it and push the change
+myself. However, if you do touch up some code and in parellel fix a few
+***adjacent*** typos, go ahead.
+
+If your change is purely code, please try to stick to the current format present
+in the CSS file. If your IDE of choice does something weird to the code,
+like automatically formatting, or changing tabs, tabs width, or *anything like
+that*, fix your IDE, not the code.
+
+Lastly, and this is the most important requirement: You must be willing to waive
+any and all copyright on your submission. This """project""" is released into
+the public domain, and thus all contributions are released into the same as well.
 
 ## License
 
