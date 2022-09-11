@@ -3,6 +3,8 @@
 Custom CSS for the [YAGPDB control panel](https://yagpdb.xyz/manage)
 following the [Nord](https://www.nordtheme.com/docs/colors-and-palettes/) palette.
 
+![demo](demo.png)
+
 ## Information
 
 This stylesheet was developed and tested with Firefox, as that browser has
