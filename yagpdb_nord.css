@@ -100,6 +100,14 @@
         background-color: var(--nord2) !important;
     }
 
+    /* Don't apply the above to tables inside hljs
+     * (the thing you get when expanding a cusom command),
+     * because that looks ugly
+    */
+    table.hljs-ln > tbody > tr > * {
+        background-color: transparent !important;
+    }
+
     textarea {
         background-color: var(--nord0) !important;
     }
