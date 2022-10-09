@@ -285,6 +285,10 @@
         padding: 1em !important;
     }
 
+    pre > code {
+      background-color: transparent !important;
+    }
+
     .host-status > .node-row:nth-child(odd) {
         background-color: var(--nord2) !important;
     }
