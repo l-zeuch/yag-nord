@@ -278,9 +278,11 @@
         border: 0px solid var(--nord1) !important;
     }
 
-    .highlight, div > pre {
+    .highlight, pre {
         background-color: var(--nord0) !important;
         color: var(--nord4) !important;
+        border-radius: 5px !important;
+        padding: 1em !important;
     }
 
     .host-status > .node-row:nth-child(odd) {
