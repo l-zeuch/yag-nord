@@ -263,6 +263,12 @@
         background-color: var(--nord1) !important;
     }
 
+    .cc-disabled,
+    .cc-disabled > h2 > a {
+      background-color: var(--nord3) !important;
+      text-decoration: line-through !important;
+    }
+
     .cc-panel {
         border: 5px solid var(--nord1) !important;
         border-radius: 5px !important;
