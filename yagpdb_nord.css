@@ -100,6 +100,22 @@
         background-color: var(--nord2) !important;
     }
 
+    .tgl-btn {
+      border-color: var(--nord11) !important;
+    }
+
+    .tgl-btn::after {
+      background-color: var(--nord11) !important;
+    }
+
+    .tgl.tgl-flat:checked+label {
+      border-color: var(--nord14) !important;
+    }
+
+    .tgl.tgl-flat:checked+label::after {
+      background-color: var(--nord14) !important;
+    }
+
     /* Don't apply the above to tables inside hljs
      * (the thing you get when expanding a cusom command),
      * because that looks ugly
