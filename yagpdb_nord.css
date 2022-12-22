@@ -139,16 +139,19 @@
     .alert-danger {
         background-color: var(--nord11) !important;
         border-color: var(--nord11) !important;
+        color: var(--nord3) !important;
     }
 
     .alert-info {
         background-color: var(--nord8) !important;
         border-color: var(--nord8) !important;
+        color: var(--nord3) !important;
     }
 
     .alert-warning {
         background-color: var(--nord13) !important;
         border-color: var(--nord13) !important;
+        color: var(--nord3) !important;
     }
 
     .automod-rule-part-table > table > tbody > tr > * {
