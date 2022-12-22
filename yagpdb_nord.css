@@ -43,6 +43,10 @@
         background-color: var(--nord0) !important;
         color: var(--nord4) !important;
     }
+    
+    p {
+      color: var(--nord4) !important;
+    }
 
     [class*="card"] {
         background-color: var(--nord1) !important;
