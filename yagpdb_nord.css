@@ -334,7 +334,7 @@
     .input-group-text,
     input, select, .btn-group > * {
         background-color: var(--nord3) !important;
-        border: 1px solid transparent !important;
+        border: 1px solid var(--nord3) !important;
         transition-duration: 0.2s !important;
     }
 
