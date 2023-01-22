@@ -130,6 +130,11 @@
 
     textarea {
         background-color: var(--nord0) !important;
+        transition-duration: 0.2s !important;
+    }
+
+    textarea:focus, textarea:hover {
+      border: 1px solid var(--nord8) !important;
     }
 
     thead > tr > * {
