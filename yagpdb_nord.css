@@ -327,12 +327,43 @@
         background-color: var(--nord2) !important;
     }
 
-    .indicator-danger::before {
-        color: var(--nord11) !important;
+    /* code highlighting on expanded custom commands on the home tab
+     * for available scopes, refer to
+     * https://highlightjs.readthedocs.io/en/latest/css-classes-reference.html.
+     *
+     * For the actual colours as intended by Nord, we're basically copying
+     * https://github.com/arcticicestudio/nord-highlightjs, just trimmed down a little.
+     *
+     * For what we actually need to modify, refer to
+     * https://github.com/botlabs-gg/yagpdb/blob/master/customcommands/assets/customcommands.html#L186
+     */
+    .hljs-keyword {
+      color: var(--nord9) !important;
     }
 
-    .indicator-success::before {
-        color: var(--nord14) !important;
+    .hljs-literal {
+      color: var(--nord9) !important;
+    }
+
+    .hljs-built-in {
+      color: var(--nord7) !important;
+    }
+    
+    .hljs-comment {
+      color: var(--nord3) !important;
+      filter: brightness(1.2) !important;
+    }
+
+    .hljs-string {
+      color: var(--nord14) !important;
+    }
+
+    .hljs-number {
+      color: var(--nord15) !important;
+    }
+
+    .hljs-name {
+      color: var(--nord9) !important;
     }
 
     /* Buttons */
