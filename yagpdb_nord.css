@@ -366,6 +366,14 @@
       color: var(--nord9) !important;
     }
 
+    .indicator-danger::before {
+      color: var(--nord11) !important;
+    }
+
+    .indicator-success::before {
+      color: var(--nord14) !important;
+    }
+
     /* Buttons */
     .input-group-text,
     input, select, .btn-group > * {
