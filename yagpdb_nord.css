@@ -26,6 +26,7 @@
 	--nord8:  #88C0D0;
 	--nord9:  #81A1C1;
 	--nord10: #5E81AC;
+	--nord10-darker: hsl(213, 32%, 47%);
 
 	/* Aurora */
 	--nord11: #BF616A;
@@ -78,7 +79,7 @@
 	}
 
 	h1, h2 {
-		border-color: var(--nord10) !important;
+		border-color: var(--nord10-darker) !important;
 		color: var(--nord6) !important;
 	}
 
