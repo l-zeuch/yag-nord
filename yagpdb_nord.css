@@ -64,12 +64,16 @@
 		color: var(--nord4) !important;
 	}
 
-	a {
+    /* These exclude anchors of the btn class, so that they appear and behave
+     * exactly like buttons, as they should.
+     */
+
+	a:not(.btn) {
 		color: var(--nord9) !important;
 		transition-duration: 0.2s !important;
 	}
 
-	a:focus, a:hover {
+	a:focus:not(.btn), a:hover:not(.btn) {
 		background-color: var(--nord1) !important;
 		color: var(--nord7) !important;
 	}
