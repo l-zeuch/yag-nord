@@ -58,13 +58,22 @@ If you would like to report other working browsers, add a new section
 `Browsername` under *Installation*. If applicable, describe the modifications
 necessary to make it work, or submit a patch file for users to apply.
 
+### IMPORTANT, READ THIS OR YOUR PR / ISSUE GETS CLOSED
+
+If you're just here to open a PR or issue about how many `!important` directives
+there are, **don't**. 
+
+I'm not going to change this, and I'm not going to accept any PRs that change it
+either. This is intended for `userContent.css`, thus this `!important` spam is
+really kind of necessary.
+
 ### Submitting Code
 
 The commit header is mandatory and should summarize the change. "Update README"
 is not an acceptable header, nor is "magic". Please try to keep it below 50
 characters.
 
-If 50 characters are not enough and you want to add more detail, add a commit
+If 50 characters are not enough, and you want to add more detail, add a commit
 body, like so:
 
 ```
@@ -75,7 +84,7 @@ body, like so:
 
 Secondly, your change should be useful: though fixing typos is appreciated, if
 that's the sole content of your PR I'm going to reject it and push the change
-myself. However, if you do touch up some code and in parellel fix a few
+myself. However, if you do touch up some code and in parallel fix a few
 ***adjacent*** typos, go ahead.
 
 If your change is purely code, please try to stick to the current format present
