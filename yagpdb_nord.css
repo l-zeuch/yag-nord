@@ -37,7 +37,8 @@
 	--nord15: #B48EAD;
 }
 
-@-moz-document regexp("https://yagpdb.xyz/(manage|public|status|premium).*") {
+@-moz-document regexp("https://yagpdb.xyz/(manage|public|status|premium).*"),
+regexp("http://yagpdb.localhost/(manage|public|status|premium).*") {
 	@namespace svg url(http://www.w3.org/2000/svg);
 
 	/* Base stuff */
@@ -319,7 +320,8 @@
 		border: 0px solid var(--nord1) !important;
 	}
 
-	.highlight, pre {
+    /* exclude pre.CodeMirror-line otherwise we have insane jank */
+	.highlight, pre:not(.CodeMirror-line) {
 		background-color: var(--nord0) !important;
 		color: var(--nord4) !important;
 		border-radius: 5px !important;
@@ -572,4 +574,45 @@
 	.ui-pnotify > span {
 		border-color: var(--nord15) !important;
 	}
+
+	/* CodeMirror, blatantly copied from https://codemirror.net/5/theme/nord.css */
+    .CodeMirror { background: #2e3440!important; color: #d8dee9!important; }
+    div.CodeMirror-selected { background: #434c5e!important; }
+    .CodeMirror-line::selection, .CodeMirror-line > span::selection, .CodeMirror-line > span > span::selection { background: #3b4252!important; }
+    .CodeMirror-line::-moz-selection, .CodeMirror-line > span::-moz-selection, .CodeMirror-line > span > span::-moz-selection { background: #3b4252!important; }
+    .CodeMirror-gutters { background: #2e3440!important; border-right: 0px!important; }
+    .CodeMirror-guttermarker { color: #4c566a!important; }
+    .CodeMirror-guttermarker-subtle { color: #4c566a!important; }
+    .CodeMirror-linenumber { color: #4c566a!important; }
+    .CodeMirror-cursor { border-left: 1px solid #f8f8f0!important; }
+
+    span.cm-comment { color: #4c566a!important; }
+    span.cm-atom { color: #b48ead!important; }
+    span.cm-number { color: #b48ead!important; }
+
+    span.cm-comment.cm-attribute { color: #97b757!important; }
+    span.cm-comment.cm-def { color: #bc9262!important; }
+    span.cm-comment.cm-tag { color: #bc6283!important; }
+    span.cm-comment.cm-type { color: #5998a6!important; }
+
+    span.cm-property, span.cm-attribute { color: #8FBCBB!important; }
+    span.cm-keyword { color: #81A1C1!important; }
+    span.cm-builtin { color: #81A1C1!important; }
+    span.cm-string { color: #A3BE8C!important; }
+
+    span.cm-variable { color: #d8dee9!important; }
+    span.cm-variable-2 { color: #d8dee9!important; }
+    span.cm-variable-3, span.cm-type { color: #d8dee9!important; }
+    span.cm-def { color: #8FBCBB!important; }
+    span.cm-bracket { color: #81A1C1!important; }
+    span.cm-tag { color: #bf616a!important; }
+    span.cm-header { color: #b48ead!important; }
+    span.cm-link { color: #b48ead!important; }
+    span.cm-error { background: #bf616a!important; color: #f8f8f0!important; }
+
+    .CodeMirror-activeline-background { background: #3b4252!important; }
+    .CodeMirror-matchingbracket {
+      text-decoration: underline!important;
+      color: white !important;
+    }
 }
