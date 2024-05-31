@@ -37,8 +37,7 @@
 	--nord15: #B48EAD;
 }
 
-@-moz-document regexp("https://yagpdb.xyz/(manage|public|status|premium).*"),
-regexp("http://yagpdb.localhost/(manage|public|status|premium).*") {
+@-moz-document regexp("https://yagpdb.xyz/(manage|public|status|premium).*") {
 	@namespace svg url(http://www.w3.org/2000/svg);
 
 	/* Base stuff */
