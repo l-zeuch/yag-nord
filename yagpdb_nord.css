@@ -314,18 +314,20 @@
 		background-color: var(--nord0) !important;
 	}
 
-	/* Front-Page */
 	.highlight {
 		border: 0px solid var(--nord1) !important;
-	}
-
-    /* exclude pre.CodeMirror-line otherwise we have insane jank */
-	.highlight, pre:not(.CodeMirror-line) {
 		background-color: var(--nord0) !important;
 		color: var(--nord4) !important;
 		border-radius: 5px !important;
-		padding: 1em !important;
+		padding: 0.6em !important;
 	}
+
+	.highlight > pre {
+        background-color: var(--nord0) !important;
+        color: var(--nord4) !important;
+        padding: 0 !important;
+        margin-bottom: 0 !important;
+    }
 
 	pre > code {
 		background-color: transparent !important;
