@@ -570,6 +570,7 @@
 
 	.tooltip {
 		opacity: 0.9 !important;
+		transition-duration: 0s !important;
 	}
 
 	.ui-pnotify > span {
