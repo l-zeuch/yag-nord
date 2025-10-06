@@ -72,11 +72,10 @@
 	a:not(.btn) {
 		color: var(--nord9) !important;
 		transition-duration: 0.2s !important;
-	}
-
-	a:focus:not(.btn), a:hover:not(.btn) {
-		background-color: transparent !important;
-		color: var(--nord7) !important;
+		&:focus, &:hover {
+		    background-color: transparent !important;
+		    color: var(--nord7) !important;
+		}
 	}
 
 	code {
@@ -112,18 +111,16 @@
 
 	.tgl-btn {
 		border-color: var(--nord11) !important;
-	}
-
-	.tgl-btn::after {
-		background-color: var(--nord11) !important;
+		&::after {
+		    background-color: var(--nord11) !important;
+	    }
 	}
 
 	.tgl.tgl-flat:checked+label {
 		border-color: var(--nord14) !important;
-	}
-
-	.tgl.tgl-flat:checked+label::after {
+		&::after {
 		background-color: var(--nord14) !important;
+		}
 	}
 
 	/* Don't apply the above to tables inside hljs
@@ -137,10 +134,9 @@
 	textarea {
 		background-color: var(--nord0) !important;
 		transition-duration: 0.2s !important;
-	}
-
-	textarea:focus, textarea:hover {
-		border: 1px solid var(--nord8) !important;
+		&:hover, &:focus {
+		    border: 1px solid var(--nord8) !important;
+        }
 	}
 
 	thead > tr > * {
@@ -183,59 +179,42 @@
 		border-color: var(--nord14) !important;
 	}
 
-	.btn-danger:active, .btn-warning:active,
-	.btn-success:active, .btn-info:active, .btn-primary:active,
-	.btn-secondary:active, .btn-tertiary:active, .btn-quarternary:active {
-		box-shadow: 4px 4px 0px -2px var(--nord0) inset !important;
-	}
-
 	.btn-primary {
 		background-color: var(--nord9) !important;
 		border-color: var(--nord9) !important;
 		color: var(--nord4) !important;
 		transition-duration: 0.2s !important;
-	}
-
-	.btn-primary:hover, .btn-primary:focus {
-		background-color: var(--nord9) !important;
-		border-color: var(--nord9) !important;
-		box-shadow: 4px 4px 0px 2px var(--nord0) !important;
+		&:hover, &:focus {
+		    box-shadow: 4px 4px 0px 2px var(--nord0) !important;
+		}
 	}
 
 	.btn-secondary {
 		background-color: var(--nord8) !important;
 		border-color: var(--nord8) !important;
 		transition-duration: 0.2s !important;
-	}
-
-	.btn-secondary:hover, .btn-secondary:focus {
-		background-color: var(--nord8) !important;
-		border-color: var(--nord8) !important;
-		box-shadow: 4px 4px 0px 2px var(--nord0) !important;
+		&:hover, &:focus {
+            box-shadow: 4px 4px 0px 2px var(--nord0) !important;
+        }
 	}
 
 	.btn-tertiary {
 		background-color: var(--nord10) !important;
 		border-color: var(--nord10) !important;
 		transition-duration: 0.2s !important;
-	}
-
-	.btn-tertiary:hover, .btn-tertiary:focus {
-		background-color: var(--nord10) !important;
-		border-color: var(--nord10) !important;
-		box-shadow: 4px 4px 0px 2px var(--nord0) !important;
+		&:hover, &:focus {
+            box-shadow: 4px 4px 0px 2px var(--nord0) !important;
+        }
 	}
 
 	.btn-quarternary {
 		background-color: var(--nord10-darker) !important;
 		border-color: var(--nord10-darker) !important;
 		transition-duration: 0.2s !important;
-	}
 
-	.btn-quarternary:hover, .btn-quarternary:focus {
-		background-color: var(--nord10-darker) !important;
-		border-color: var(--nord10-darker) !important;
-		box-shadow: 4px 4px 0px 2px var(--nord0) !important;
+		&:hover, &:focus {
+            box-shadow: 4px 4px 0px 2px var(--nord0) !important;
+        }
 	}
 
 	.btn-info {
@@ -243,37 +222,29 @@
 		border-color: var(--nord9-darker) !important;
 		transition-duration: 0.2s !important;
 		color: var(--nord4) !important;
-	}
 
-	.btn-info:hover, .btn-info:focus {
-		background-color: var(--nord9-darker) !important;
-		border-color: var(--nord9-darker) !important;
-		box-shadow: 4px 4px 0px 2px var(--nord0) !important;
+		&:hover, &:focus {
+            box-shadow: 4px 4px 0px 2px var(--nord0) !important;
+        }
 	}
-
 
 	.btn-success {
 		background-color: var(--nord14) !important;
 		border-color: var(--nord14) !important;
 		transition-duration: 0.2s !important;
-	}
 
-	.btn-success:hover, .btn-success:focus {
-		background-color: var(--nord14) !important;
-		border-color: var(--nord14) !important;
-		box-shadow: 4px 4px 0px 2px var(--nord0) !important;
+		&:hover, &:focus {
+            box-shadow: 4px 4px 0px 2px var(--nord0) !important;
+        }
 	}
 
 	.btn-warning {
 		background-color: var(--nord13) !important;
 		border-color: var(--nord13) !important;
 		transition-duration: 0.2s !important;
-	}
-
-	.btn-warning:hover, btn-warning:focus {
-		background-color: var(--nord13) !important;
-		border-color: var(--nord13) !important;
-		box-shadow: 4px 4px 0px 2px var(--nord0) !important;
+		&:hover, &:focus {
+            box-shadow: 4px 4px 0px 2px var(--nord0) !important;
+        }
 	}
 
 	.btn-danger {
@@ -281,12 +252,15 @@
 		border-color: var(--nord11) !important;
 		border-width: 3px !important;
 		transition-duration: 0.2s !important;
+		&:hover, &:focus {
+            box-shadow: 4px 4px 0px 2px var(--nord0) !important;
+        }
 	}
-
-	.btn-danger:hover, .btn-danger:focus {
-		background-color: var(--nord11) !important;
-		border-color: var(--nord11) !important;
-		box-shadow: 4px 4px 0px 2px var(--nord0) !important;
+	
+	.btn-danger:active, .btn-warning:active,
+	.btn-success:active, .btn-info:active, .btn-primary:active,
+	.btn-secondary:active, .btn-tertiary:active, .btn-quarternary:active {
+		box-shadow: 4px 4px 0px -2px var(--nord0) inset !important;
 	}
 
 	.card-body .host-status > .row .node-row > .col-0 {
@@ -320,16 +294,15 @@
 		color: var(--nord4) !important;
 		border-radius: 5px !important;
 		padding: 0.6em !important;
+		& > pre {
+            background-color: var(--nord0) !important;
+            color: var(--nord4) !important;
+            padding: 0 !important;
+            margin-bottom: 0 !important;
+		}
 	}
 
-	.highlight > pre {
-        background-color: var(--nord0) !important;
-        color: var(--nord4) !important;
-        padding: 0 !important;
-        margin-bottom: 0 !important;
-    }
-
-	pre > code {
+	pre code {
 		background-color: transparent !important;
 	}
 
@@ -406,12 +379,11 @@
 	.nav-item:last-child > form > .nav-link {
 		border-top: 3px solid var(--nord3) !important;
 		background-color: var(--nord0) !important;
-	}
-
-	.nav-item:last-child > form > .nav-link:hover {
-		border-top: 3px solid var(--nord7) !important;
-		background-color: var(--nord1) !important;
-		color: var(--nord7) !important;
+		&:hover {
+		    border-top: 3px solid var(--nord7) !important;
+		    background-color: var(--nord1) !important;
+		    color: var(--nord7) !important;
+		}
 	}
 
 	/* reset the weird \"+\" button on tabs row */
@@ -436,21 +408,15 @@
 		color: var(--nord4) !important;
 	}
 
-	.nav-tabs > .nav-item > a {
+	.nav-tabs > .nav-item {
 		color: var(--nord4) !important;
 		background-color: var(--nord0) !important;
 		border-top-color: var(--nord3) !important;
-	}
-
-	.nav-tabs > .nav-item > a:hover,
-	.nav-tabs > .nav-item .active {
-		border-top-color: var(--nord7) !important;
-		background-color: var(--nord1) !important;
-		color: var(--nord7) !important;
-	}
-
-	.nav-tabs > .nav-item {
-		background-color: var(--nord0) !important;
+		& > a, & > a:hover, & .active {
+		    border-top-color: var(--nord7) !important;
+		    background-color: var(--nord1) !important;
+		    color: var(--nord7) !important;
+		}
 	}
 
 	.notification-danger {
@@ -493,26 +459,34 @@
 		border-color: var(--nord12) !important;
 	}
 
-	.shard-quick-details > p {
-		line-height: 20px !important;
-		color: var(--nord2) !important;
-	}
-
-	.shard-quick-details > p:nth-child(1) {
-		text-align: left !important;
-		font-weight: bold !important;
-	}
-
-	.shard-quick-details > p:nth-child(2) {
-		text-align: right !important;
-		font-weight: bold !important;
-		text-shadow: none !important;
-		color: var(--nord3) !important;
+    .shard {
+        width: 4.2em !important;
+        height: 4.2em !important;
+	    &:hover {
+		    border-color: var(--nord8) !important;
+		    border-width: 3px !important;
+	    }
 	}
 
 	.shard-quick-details {
-		filter: none !important;
-		-webkit-filter: none !important;
+	    filter: none !important;
+	    -webkit-filter: none !important;
+	    word-wrap: normal !important;
+		& > p {
+		    line-height: 1.2em !important;
+		    color: var(--nord2) !important;
+		    margin-left: -2px !important;
+		    margin-top: -4px !important;
+		    &:nth-child(1) {/* shard ID */
+		        text-align: left !important;
+		        font-size: 1.2em !important;
+		        margin-bottom: 0.5em !important;
+		    }
+		    &:nth-child(2) {/* shard events */
+		        text-shadow: none !important;
+		        color: var(--nord3) !important;
+		    }
+		}
 	}
 
 	.shard-status-connecting {
@@ -544,11 +518,6 @@
 		border-width: 3px !important;
 	}
 
-	.shard:hover {
-		border-color: var(--nord8) !important;
-		border-width: 3px !important;
-	}
-
 	.tab-content {
 		background-color: var(--nord1) !important;
 	}
@@ -561,16 +530,15 @@
 		color: var(--nord14) !important;
 	}
 
-	.tooltip > .tooltip-inner {
-		background-color: var(--nord0) !important;
-		color: var(--nord4) !important;
-		box-shadow: 4px 4px 0px 2px var(--nord0) !important;
-		border: 1px solid var(--nord9) !important;
-	}
-
 	.tooltip {
 		opacity: 0.9 !important;
 		transition-duration: 0s !important;
+		& > .tooltip-inner {
+		    background-color: var(--nord0) !important;
+		    color: var(--nord4) !important;
+		    box-shadow: 4px 4px 0px 2px var(--nord0) !important;
+		    border: 1px solid var(--nord9) !important;
+		}
 	}
 
 	.ui-pnotify > span {
