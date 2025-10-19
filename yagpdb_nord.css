@@ -33,6 +33,7 @@
 	--nord11: #BF616A;
 	--nord12: #D08770;
 	--nord13: #EBCB8B;
+	--nord13-darker: hsl(46, 66%, 57%);
 	--nord14: #A3BE8C;
 	--nord15: #B48EAD;
 }
@@ -76,7 +77,14 @@
 		    background-color: transparent !important;
 		    color: var(--nord7) !important;
 		}
+		&.premium-color {/* due to specificity issues from using !important everywhere */
+		    color: var(--nord13-darker) !important;
+		}
 	}
+
+	.premium-color {
+        color: var(--nord13-darker) !important;
+    }
 
 	code {
 		color: var(--nord7) !important;
