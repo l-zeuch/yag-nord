@@ -180,6 +180,11 @@
 		border-color: var(--nord14) !important;
 	}
 
+	.btn {
+	    font-size: 0.9rem !important;
+	    padding: 0.47rem 0.75rem !important;
+	}
+
 	.btn-primary {
 		background-color: var(--nord9) !important;
 		border-color: var(--nord9) !important;
@@ -361,7 +366,7 @@
 
 	/* Buttons */
 	.input-group-text,
-	input, select, .btn-group > * {
+	input, select, .btn-group > *:not([class*="btn-"]) {
 		background-color: var(--nord3) !important;
 		border: 1px solid var(--nord3) !important;
 		transition-duration: 0.2s !important;
